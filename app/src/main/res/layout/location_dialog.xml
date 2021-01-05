@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:padding="10dp">
+
+    <fragment
+        android:id="@+id/loc_offre"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@color/colorP"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/colorP"
+        app:rippleColor="@color/colorP"
+        app:backgroundTint="@color/blanc_c"
+        android:textSize="13dp"
+        android:text="Retour à l'offre" />
+
+</LinearLayout>

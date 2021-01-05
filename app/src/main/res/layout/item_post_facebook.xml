@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="@drawable/bg_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/idmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="message"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:background="@color/colorP" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idposte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="1dp"
+                android:textColor="#000"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/idupdated_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="updated_time"
+                android:layout_gravity="right"
+                android:textColor="@color/grisF"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_accueil"
+        android:icon="@drawable/accueil"
+        android:title="Accueil" />
+
+    <item android:id="@+id/navigation_nouveau"
+        android:icon="@drawable/nouveau"
+        android:title="Nouveau" />
+
+    <item android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+
+
+</menu>

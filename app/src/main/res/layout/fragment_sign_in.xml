@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/signin"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_person_outline"
+            android:drawablePadding="20dp"
+            app:errorTextColor="@android:color/holo_red_dark"
+            >
+
+            <EditText
+                android:background="@android:color/transparent"
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:ems="10"
+                android:textColor="@color/blanc_c"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/psL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:startIconDrawable="@drawable/ic_lock_outline"
+            android:drawablePadding="20dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/show_password_selector"
+            app:errorTextColor="@android:color/holo_red_dark"
+            >
+
+            <EditText
+                android:background="@android:color/transparent"
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pass"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/blanc_c"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="@string/login"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@color/blanc_c"
+            android:fontFamily="@font/carter_one"
+            />
+
+        <TextView
+            android:id="@+id/mdp_ou"
+            android:text="@string/mdp_ou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:tooltipText="@string/mdp_tt"/>
+
+        <!--com.google.android.material.button.MaterialButton
+            android:id="@+id/log_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_fb"
+            android:layout_marginTop="10dp"
+            app:icon="@drawable/facebook_icon"
+            android:textSize="15sp"
+            android:textColor="@color/blanc_c"
+            app:cornerRadius="10dp"
+            /-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/log_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            style="@style/FacebookButton"/>
+
+        <TextView
+            android:id="@+id/att"
+            android:textColor="@color/blanc_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:textSize="18sp"
+            app:icon="@drawable/facebook_icon"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:text="@string/att_fb"
+            />
+    </LinearLayout>
+
+</ScrollView>

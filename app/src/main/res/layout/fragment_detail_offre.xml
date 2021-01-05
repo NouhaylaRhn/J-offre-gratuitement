@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListOffre.DetailOffreFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/offre_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop"
+            android:contentDescription="Image de l'offre"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/offre_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/project_offre_title"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <TextView
+                android:id="@+id/cloture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Offre Cloturée)"
+                android:visibility="gone"
+                android:textColor="@color/err"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/offre_description_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/main_activity_description"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dateDeadline"
+                android:textColor="@color/colorPrimary1"
+                app:cornerRadius="20dp"
+                app:rippleColor="@color/colorPrimary1"
+                app:strokeColor="@color/colorPrimary1"
+                app:backgroundTint="@color/blanc_c"
+                android:drawableLeft="@drawable/ic_date"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date limite: 22-06-2020" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/benif"
+                android:textColor="@color/grisF"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/grisF"
+                app:rippleColor="@color/grisF"
+                app:backgroundTint="@color/blanc_c"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de bénéficiaires : 12 | 6 restants" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ajoutcomment"
+                android:textColor="@color/colorPrimaryDark"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/colorPrimaryDark"
+                app:rippleColor="@color/colorPrimaryDark"
+                app:backgroundTint="@color/blanc_c"
+                android:drawableLeft="@drawable/ic_comment"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Commenter" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewLocation"
+                android:textColor="@color/colorP"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/colorP"
+                app:rippleColor="@color/colorP"
+                app:backgroundTint="@color/blanc_c"
+                android:drawableLeft="@drawable/ic_location"
+                android:textSize="13dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afficher la position" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forMesOffres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorPrimary1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/showBenif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/lightGreen"
+                app:strokeColor="@color/lightBlue"
+                app:rippleColor="@color/lightGreen"
+                app:backgroundTint="@color/blanc_c"
+                app:cornerRadius="20dp"
+                android:textSize="15sp"
+                android:text="Afficher les bénéficiaires" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/showingComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Commentaires"
+                android:layout_margin="15dp"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <TextView
+                android:id="@+id/aucun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:text="Aucun commentaire pour l'instant"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_ripple"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="image du bénéficiaire"
+        android:layout_margin="5dp"
+        android:src="@drawable/profile"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/grisF"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorP"
+            android:textSize="20sp"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/commentUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Commentaire"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/dateComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="date"/>
+
+        <TextView
+            android:id="@+id/idUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chooseBenif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/grisF"
+            app:rippleColor="@color/grisF"
+            app:strokeColor="@color/grisF"
+            app:backgroundTint="@color/blanc_c"
+            android:paddingHorizontal="5dp"
+            android:textSize="10sp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:cornerRadius="20dp"
+            android:text="Choisir comme bénificiaire" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

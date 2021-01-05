@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MesOffres.MesOffresFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        style="@style/Widget.project.Toolbar"
+        app:titleTextColor="@color/blanc_c"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/project_menu"
+        app:title="@string/app_name"
+        app:subtitle="Mes offres"
+        app:subtitleTextColor="@color/blanc_c"/>
+    <LinearLayout
+        android:id="@+id/mesoffres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recycler_view" />
+
+    </LinearLayout>
+
+</FrameLayout>

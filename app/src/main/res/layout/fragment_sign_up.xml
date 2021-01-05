@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/signup">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:endIconMode="clear_text"
+            android:labelFor="@id/nom"
+            app:errorTextColor="@android:color/holo_red_dark"
+            >
+
+            <EditText
+                android:padding="15dp"
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nom"
+                android:ems="8"
+                android:textColor="@color/blanc_c"
+                android:inputType="text"
+                android:textSize="15sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="15dp"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:endIconMode="clear_text"
+            android:labelFor="@id/pass"
+            app:errorTextColor="@android:color/holo_red_dark"
+            >
+
+            <EditText
+                android:padding="15dp"
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:ems="8"
+                android:textColor="@color/blanc_c"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/psL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/show_password_selector"
+            android:layout_marginTop="15dp"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:errorTextColor="@android:color/holo_red_dark"
+            >
+
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pass"
+                android:ems="8"
+                android:inputType="textPassword"
+                android:textColor="@color/blanc_c"
+                android:textSize="15sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:backgroundTint="@color/blanc_c"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

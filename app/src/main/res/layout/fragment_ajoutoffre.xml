@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MesOffres.AjoutOffreFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        style="@style/Widget.project.Toolbar"
+        app:titleTextColor="@color/blanc_c"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/project_menu"
+        app:title="@string/app_name"
+        app:subtitle="Nouvelle Offre"
+        app:subtitleTextColor="@color/blanc_c"/>
+
+    <ScrollView
+        android:id="@+id/ajoutoffre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/offreGridBackgroundColor"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_search_view">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_help"
+
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="@string/ajout_offre_help"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Catégorie de l'offre"
+                android:id="@+id/categ"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Titre de l'offre"
+                app:endIconMode="clear_text">
+                <EditText
+                    android:id="@+id/ajouttitre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Description de l'offre"
+                app:endIconMode="clear_text">
+                <EditText
+                    android:id="@+id/ajoutdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:clickable="true"
+                android:id="@+id/deadline"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Délai de l'offre"
+                app:endIconMode="clear_text">
+                <EditText
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/ajoutdeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre de bénificiares"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:id="@+id/nbr_benif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/choose_image"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_add_photo"
+                    android:text="Choisir une image" />
+
+                <ImageView
+                    android:id="@+id/image_view_ajoutOffe"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:layout_above="@id/progress_bar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    app:srcCompat="@color/browser_actions_title_color" />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button_upload"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ajoutloca"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter la localisation de l'offre"
+                app:icon="@drawable/placee"
+                android:enabled="false"
+                />
+
+            <fragment
+                android:id="@+id/map_frg"
+                android:name="com.example.projet_v1.MesOffres.WorkAroundMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                >
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sv_location"
+                    android:queryHint="Chercher une position ..."
+                    android:iconifiedByDefault="false"
+                    android:layout_margin="10dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/bg_search_view"/>
+            </fragment>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ajouteroffre"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:backgroundTint="@color/blanc_c"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Ajouter" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/annuler"
+                    android:textColor="@color/blanc_c"
+                    app:cornerRadius="20dp"
+                    app:backgroundTint="@color/colorPrimaryDark"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annuler" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

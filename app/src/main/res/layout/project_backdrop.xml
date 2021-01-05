@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acceuil"
+        app:icon="@drawable/accueil"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Acceuil" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:id="@+id/mesoffres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_list_offre"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Mes offres" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:id="@+id/ajoutoffre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_add_offre"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Nouvelle offre" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:id="@+id/locationoffres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_location"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Offres sur le MAP" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idpostesfacebook"
+        style="@style/Widget.project.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/facebook_icon"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        android:text="Offres depuis Facebook" />
+
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@color/colorP" />
+
+    <!--com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:id="@+id/conversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_chat"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Démarrer une conversation" /-->
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.project.Button.TextButton"
+        android:id="@+id/statistiques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_statistiques"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Statistiques" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/idnotifs"
+            style="@style/Widget.project.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_notifications"
+            app:iconTint="@color/colorP"
+            app:iconGravity="textStart"
+            app:iconPadding="20dp"
+            android:text="Notifications" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nbrNotifs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanc_c"
+            app:backgroundTint="@color/err"
+            app:cornerRadius="15dp"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idmoncompte"
+        style="@style/Widget.project.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_profile"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        android:text="Mon Compte" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/idsedeconnecter"
+        style="@style/Widget.project.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="se déconnecter"
+        app:icon="@drawable/ic_decnx"
+        app:iconTint="@color/colorP"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp" />
+
+
+</merge>

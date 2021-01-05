@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        style="@style/Widget.project.Toolbar"
+        app:titleTextColor="@color/blanc_c"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/project_menu"
+        app:title="@string/app_name"
+        app:subtitle="Mon compte"
+        app:subtitleTextColor="@color/blanc_c"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/offreGridBackgroundColor"
+        android:elevation="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/grisF"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_edit"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blanc_c"
+                app:cornerRadius="20dp"
+                app:backgroundTint="@color/colorP"
+                android:layout_marginBottom="100dp"
+                />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pas_encore"
+                android:drawablePadding="15dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_profile_user"/>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="3dp"
+                android:background="@color/colorP"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pas_encore"
+                android:drawablePadding="15dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_profile_mail"/>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="3dp"
+                android:background="@color/colorP"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pas_encore"
+                android:drawablePadding="15dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_profile_phone"/>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="3dp"
+                android:background="@color/colorP"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pas_encore"
+                android:drawablePadding="15dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_profile_date"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

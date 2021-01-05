@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">J\'offre gratuitement</string>
+    <string name="facebook_app_id">193276245289391</string>
+    <string name="fb_login_protocol_scheme">fb193276245289391</string>
+    <string name="main_activity_description">Application des dons socials, tout simplement.</string>
+    <string name="joffre">J\'offre Gratuitement</string>
+    <string name="username">Adresse email</string>
+    <string name="pass">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="create">S\'inscrire</string>
+    <string name="log_fb">Se connecter avec Facebook</string>
+    <string name="nom">Nom Complet</string>
+    <string name="prenom">Prénom</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="desc">Desc</string>
+    <string name="id">ID</string>
+    <string name="deadline">deadline</string>
+    <string name="project_search_title">Recherche</string>
+    <string name="project_filter_title">Filtrer</string>
+    <string name="project_offre_title">Titre</string>
+    <string name="project_offre_description">text de description</string>
+    <string name="nombre_beneficiaire">nombre beneficiaire</string>
+    <string name="label">label</string>
+    <string name="ajout_offre_empty">Vous devez remplir tous les champs de la formulaire</string>
+    <string name="ajout_offre_succes">Votre offre est bien ajouté, vous pouvez consulter vos offres pour les modifier ou pour choisir les beneficiaires</string>
+    <string name="ajout_offre_help">Vous devez remplir tous les champs de cette formulaire, pour la localisation vous devez saisir la position associée à l\'offre
+        dans la zone de recherche (Par exemple \"Maarif\") puis valider avec la touche de recherche sur le clavier.</string>
+    <string name="offre_posteFB">Vous touvez ici les postes facebook extraits du groupe "J'offre Gratuitement". Si vous souhaitez d\'accéder au poste et voir plus de détail vous pouvez cliquer
+                                    sur le poste pour se rediriger vers Facebook</string>
+    <string name="location_offres_helper">Vous trouvez ici les localisations des offres qui sont proches de vous, Vous pouvez agrandir cliquez sur le marqueur pour voir plus de détail.</string>
+    <string name="lis_offre_help">Vous trouvez ici la liste des dernières offres publiées, Vous pouvez glisser votre doigt vers le bas  pour raffraichir les données. cliquez sur "détail" pour
+        consulter l\'offre,si vous voulez bénéficier vous pouvez commenter.</string>
+    <string-array name="category_array">
+        <item>Vetement</item>
+        <item>medicaments</item>
+        <item>Informatique et multimedia</item>
+        <item>Emploi</item>
+        <item>Education</item>
+        <item>Autres</item>
+    </string-array>
+    <string name="err_np">3 charactères au minimum</string>
+    <string name="err_mail">Veuillez saisir une adresse émail valide</string>
+    <string name="err_tel">Veuillez saisir un numéro de téléphone valide (+212.........)</string>
+    <string name="err_dtn">Veuillez saisir une date de naissance correcte (jj-mm-aaaa)</string>
+    <string name="err_pass">Veuillez saisir un mot de passe valide (8 charactères au minimum)</string>
+    <string name="register_warning_msg">Impossible de créer le compte, l\'adresse émail que vous avez saisie existe déja !</string>
+    <string name="register_empty_form">Vous devez remplir tous les champs !</string>
+    <string name="register_success_msg">Le compte est créé avec succès, vous devez le vérifier à partir le mail qu\'on vient de vous l\'envoyer, puis veuillez se connecter pour compléter les informations de votre profil !</string>
+    <string name="register_error_msg">Une erreur c\'est produite lors de la création du compte, Veuillez réssayer !</string>
+    <string name="login_error_msg">Une erreur c\'est produite lors de la connexion à votre compte, Veuillez réssayer !</string>
+    <string name="login_warning_msg">Impossible de se connecter au compte, l\'adreese émail ou le mot de passe sont incorrects !</string>
+    <string name="mail_pass_empty">Vous devez saisir votre adresse mail et votre mot de passe pour se connecter !</string>
+    <string name="parfait">Parfait</string>
+    <string name="erreur">Erreur</string>
+    <string name="attention">Attention</string>
+    <string name="att_fb">Attendez un petit moment !</string>
+    <string name="mdp_ou">Mot de passe oublié ?</string>
+    <string name="profile_updated">Votre profile est modifié avec succès. Veuillez attendre un petit moment pour le rechargement de vos informations !</string>
+    <string name="reset_mail_att">Vous devez saisir l\'adresse mail que vous utilisez dans cette application !</string>
+    <string name="reset_err">Une erreur c\'est produite, veuillez ressayer une autre fois !</string>
+    <string name="reset_suc">Un mail a été envoyé à votre boite de messagerie, veuillez le consulter pour pouvoir réinitialiser votre mot de passe !</string>
+    <string name="mdp_tt">Cliquez-ici pour réinitialiser le mot de passe</string>
+    <string name="mail_not_verified">Ce compte n\'est pas verifié, vous devez le vérifier à partir le mail qu\'on vous a envoyé, sinon, on pourra vous renvoyer le mail de vérification</string>
+    <string name="google_maps_key" translatable="false">AIzaSyDKjNC6nIdKuuz_gqGC1b1zO8NGtf0K8MQ</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="mail_verif_env">On vient de vous renvoyer le mail de vérification, veuillez le consulter pour vérifier votre compte!</string>
+    <string name="edit_profile">Editer le profil</string>
+    <string name="pas_encore"> Champs non renseigné</string>
+    <string name="tel">Numéro de téléphone</string>
+    <string name="dtn">Date de naissance</string>
+    <string name="chosse_pic">Modifier la photo de profile</string>
+    <string name="load_more">Load More</string>
+    <string name="title_comment">Confirmation</string>
+    <string name="msg_comment">Voulez vous vraiment ajouter cet utilisateur comme bénéficiaire ?</string>
+    <string name="msg_notif">Voulez vous vraiment supprimer toutes les notifications ?</string>
+</resources>
+
+
+
